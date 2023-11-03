@@ -59,6 +59,7 @@ public class MemoRepository {
             }
         });
     }
+
     public void update(Long id, MemoRequestDto requestDto) {
         String sql = "UPDATE memo SET username = ?, contents = ? WHERE id = ?";
         jdbcTemplate.update(sql, requestDto.getUsername(), requestDto.getContents(), id);
