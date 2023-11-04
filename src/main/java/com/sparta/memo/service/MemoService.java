@@ -5,7 +5,9 @@ import com.sparta.memo.dto.MemoResponseDto;
 import com.sparta.memo.entity.Memo;
 import com.sparta.memo.repository.MemoRepository;
 import java.util.List;
+import org.springframework.stereotype.Service;
 
+@Service
 public class MemoService {
 
     private final MemoRepository memoRepository;
